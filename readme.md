@@ -1,4 +1,4 @@
-#Pinyin.vim
+# Pinyin.vim
 
 I kinda want to learn Chinese, so I wrote this to help write vowel tones.
 
@@ -6,13 +6,13 @@ I kinda want to learn Chinese, so I wrote this to help write vowel tones.
 ## Usage
 
 
-In insert mode, press `<ctrl>[h,j,k,l]` to insert a tone mark on the most
-recent `a`, `e`, `i`, `o`, or `u`. This can be done either during or after
+In insert mode, press `<ctrl>[h,j,k,l]` to insert one of four tone mark on the
+most recent `a`, `e`, `i`, `o`, or `u`. This can be done either during or after
 after typing the word, so `Biānchéng` can be typed either as
 
 
 ```
-Bia <ctrl> h nche <ctrl> j ng
+Bia <ctrl>h nche <ctrl>j ng
 ```
 or
 ```
@@ -23,18 +23,18 @@ Biancheng <ctrl>j <ctrl>h
 one of `ǖ`, `ǘ`, `ǚ`, or `ǜ` on the second.
 
 
-<br><br><br><br>
+<br><br>
 ## Configuration
 
 To change the keys used for tones, add a line like the following to your `.vimrc`
 ```vim
-let g:pinyin_keys=['h','j','k','l']
+let g:pinyin_keys = ['h','j','k','l']
 ```
 
 Unfortunately due to a bit of an issue with the way vim works, `<ctrl>[1-4]`
 can't be used at the moment.
 
-<br><br><br><br>
+<br><br>
 ## Installation
 
 If you're reading this you've probably already got a plugin manager. If not, I
